@@ -120,9 +120,9 @@ export default function Desktop() {
 
   return (
     <div>
-      <div ref={mountRef} style={{ width: '100vw', height: '70vh' }} />
+      <div style={{ width: '100vw', height: '70vh' }} />
       <h2>📱 Scan this QR code with your phone:</h2>
-      {offerId ? (
+      {/* {offerId ? (
         <QRCodeSVG
           value={qrCodeValue}
           size={300}
@@ -132,7 +132,7 @@ export default function Desktop() {
         />
       ) : (
         <p style={{ color: 'red' }}>Loading QR code... Check console for errors.</p>
-      )}
+      )} */}
     </div>
   );
 }
