@@ -1,15 +1,13 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Mobile from './pages/Mobile'
-import Desktop from './pages/Desktop'
+import { Routes, Route } from 'react-router-dom';
+import Desktop from './pages/Desktop';
+import Mobile from './pages/Mobile';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/mobile" element={<Mobile />} />
-        <Route path="/desktop" element={<Desktop />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Desktop />} />
+      <Route path="/mobile" element={<Mobile />} />
+    </Routes>
   );
 }
 
