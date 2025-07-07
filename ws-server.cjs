@@ -19,10 +19,10 @@ wss.on('connection', (ws) => {
     console.log('New client connected');
   ws.on('message', (message) => {
     // Broadcast received message to all other clients
-    console.log('Received message:', message); // Debug
+    // console.log('Received message:', message.toString()); // Debug
     wss.clients.forEach((client) => {
       if (client !== ws && client.readyState === ws.OPEN) {
-        client.send(message);
+        client.send(message.toString());
       }
     });
   });
