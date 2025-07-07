@@ -5,8 +5,8 @@ import Mobile from './pages/Mobile';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Desktop />} />
-      <Route path="/mobile" element={<Mobile />} />
+      <Route path="/lightsaber-escape" element={<Desktop />} />
+      <Route path="/lightsaber-escape/mobile" element={<Mobile />} />
     </Routes>
   );
 }
