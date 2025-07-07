@@ -7,7 +7,7 @@ function Mobile() {
 
   useEffect(() => {
     // Use wss and your server's IPv4 address (replace with your actual IP if needed)
-    ws.current = new window.WebSocket("wss://192.168.202.1:4000");
+    ws.current = new window.WebSocket("wss://192.168.1.19:4000");
     ws.current.onopen = () => console.log("WebSocket connected");
     ws.current.onerror = (e) => console.error("WebSocket error", e);
     ws.current.onclose = () => console.log("WebSocket closed");
